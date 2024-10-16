@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+ 
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Le Tiers Impartial</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link href="./CSS/gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+  <script src="./CSS/jquery.min.js"></script>
+  <script src="./CSS/popper.min.js"></script>
+  <script src="./CSS/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./CSS/w3.css">
+  <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+  <script src="./CSS/bootstrap.bundle.min.js"></script> 
+	
+
+
+  <style id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+
+  <style type="text/css">
+    .fakeimg {
+		width: 100%;
+		height: 400px;
+    }
+
+	
+	a.link1:link {color:white;}
+	a.link1:visited {color:white;text-decoration: none;}
+	a.link1:hover {color:LightYellow; text-decoration: none;}
+	
+	a.link2:link {color:white;}
+	a.link2:visited {color:white; text-decoration: none;}
+	a.link2:hover {color:LightYellow; text-decoration: none;}
+
+	<!-- table, th, td {
+		border: 4px solid;
+		padding: 0px;
+		}  -->
+
+	.rightcolumn {
+		right: 0px;
+		<!-- background-image: url("./Images/bgnoir2.gif"); --> 
+		<!--  background-color: rgb(0, 0, 90); --> 
+		float: right;
+		width: 100%;
+		height: 800px;
+		padding-right: 0px;
+		padding-left: 0px;
+		background-position: center	  ;
+		background-repeat: no-repeat;
+		background-size: cover; 
+
+    }	
+	
+	#myRight {
+		background-image:url("./Images/th53a.jpg");
+	}		
+			
+	@keyframes roue {
+		0%   {background-image:url("./Images/th53a.jpg");}
+		33%  {background-image:url("./Images/th51.jpg");}
+		66%  {background-image:url("./Images/th45.jpg");}
+		100% {background-image:url("./Images/th53a.jpg");}
+	}
+   
+    #Clogo {
+		position: absolute;
+		left: 30px;
+		color: red;
+		height: 10px;
+		font-family: "BODONI mt";
+		top: 20%;
+    }
+	
+	#Lien1, #Lien2 {
+		color: rgb(255, 255, 255); 
+		font-family: BODONI mt;  
+		text-align: center;
+		font-size: 64px;
+	}
+	
+	hr { 
+		display: block;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: inset;
+		border-width: 0px;
+		width: 0%;
+	} 
+	  	  
+	#pli {
+		color: rgb(255, 255, 255);
+		font-family: Helvitica;
+		font-size: 20px;
+	}
+	
+	#Ppad {
+		color: rgb(75, 80, 90); 
+		font-family: Helvitica; 
+		font-size: 1px; 
+		padding-top: 240px;
+	}
+	
+	#plogo {
+		color: rgb(0, 0, 0);
+		font-family:  BODONI mt;
+		font-size: 20px;		
+	}
+	
+	#NAVbutton {
+		background-color: rgb(150, 150, 150);
+	}
+	
+	@media only screen and (max-width: 700px) {
+	
+		#myRight {
+			background-image:url("./Images/th53a.jpg");
+			animation-name: roue;
+			animation-duration:20s;
+			animation-iteration-count: infinite
+		} 
+	
+		#plogo {
+			color: rgb(255, 255, 255);
+		}
+		
+		#Lien1, #Lien2 {
+			color: rgb(255, 255, 255); 
+			font-family: Helvetica Neue;  
+			text-align: center;
+			font-size: 36px;
+		}
+		
+		#hrLien {
+			width: 0%;
+			border-width: px;
+		}
+		
+		#Ppad {
+			padding-top: 240px;		
+		}
+	  
+  </style>
+  
+  <style>
+
+
+	.dropdown {
+		float: right;
+		position: relative;
+		display: inline-block;
+	}
+    .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: rgb(120, 120, 120);
+		min-width: 60px;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+		right: 0;
+		z-index: 1;
+    }
+    .dropdown-content a {
+		color: rgb(255, 255, 255); 
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+    }
+    .dropdown:hover .dropdown-content {
+		display: block;
+    }
+	
+	.navbar{
+		background-image: url("./Images/nav1.jpg");
+		background-position: center	  ;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 60px;		
+	}
+	
+  </style>
+  
+
+</head>
+
+<body>
+
+
+    
+<div>  
+    <nav class="navbar navbar-expand-md navbar-dark gwd-nav-1g2p fixed-top ;" >
+      <div class="logo" id="Clogo">
+        <a class="nav-link " href="./index.html"> <p id="plogo">LE TIERS IMPARTIAL</p><br></a>
+      </div>
+      <button id="NAVbutton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+        <span class="navbar-toggler-icon">       </span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link " href="./Apropos.html">
+              <p id="pli" >
+                À propos
+              </p>
+            </a>
+          </li>
+          <li class="nav-item ml-auto dropdown">
+            <a class="nav-link" href="#">
+              <!--  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">---->
+              <p id="pli" >
+                Services
+              </p>
+            </a>
+            <div class="dropdown-content ml-auto">
+            <p id="pli" >
+                <a class="dropdown-item" href="./Conflits.html">Résolution des conflits</a>	
+                <a class="dropdown-item" href="./Analyse.html">Analyse du climat de travail</a>				
+                <a class="dropdown-item" href="./Enquete.html">Enquête administrative</a>
+                <a class="dropdown-item" href="./Soutien.html">Soutiens, conseils et formation</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="./Publications.html">
+              <p id="pli" >
+                Publications
+              </p>
+            </a>
+          </li>
+		  
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="./Contact.html">
+              <p id="pli" >
+                Nous joindre
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+</div>    
+
+	<!-- ------------------------------------------------------------- ---->
+
+<div class="rightcolumn"  id="myRight"    >
+  
+	<p id="Ppad"></p>
+  
+  	<!-- ------------------------------------------------------------- ---->
+ 
+<div class="container mt-5">
+  <div class="row">
+    <div class="mx-auto" >
+        <p  id="Lien1" ><a class="link1" href="./Apropos.html">
+        NOTRE<br>EXPERTISE</p></a>
+			<center>
+	<hr id="hrLien">
+	</center>
+    </div>
+
+    <div class="mx-auto" >
+        <p  id="Lien2" ><a class="link2" href="./Publications.html">
+        COIN<br>LECTURE</p></a>
+    </div>
+  </div>
+</div>
+
+	<!-- ------------------------------------------------------------- 
+  
+	<center>
+ 
+	<table   style="width:50%;" >
+    <tr >	    
+		<th><h1 style="font-size: 70px;">
+        <center>
+        <p  id="Lien1" ><a class="link1" href="../JCA3/JCA3.html">
+        NOTRE EXPERTISE</p></a>
+		</h1>
+		</th>
+
+		<th><h1 style="font-size: 70px;">		
+		<p  id="Lien2" ><a class="link2" href="../Lecture/Lecture.html">
+        NOTRE EXPERTISE</p></a>		
+        </center>
+        </h1>
+		</th>  
+    </tr>
+	</table>
+
+	</center>   ---->
+   
+
+	<script>
+
+		images1 = "url(./Images/th51.jpg)";
+		images2 = "url(./Images/th45.jpg)";
+		images3 = "url(./Images/th53a.jpg)";
+
+		document.getElementById("Lien1").onmouseover = function() {changeImage11()};
+		document.getElementById("Lien1").onmouseout = function() {changeImage33()};
+
+		document.getElementById("Lien2").onmouseover = function() {changeImage22()};
+		document.getElementById("Lien2").onmouseout = function() {changeImage33()};
+
+	function changeImage11() {
+		var el = document.getElementById('myRight');
+		el.style.backgroundImage = images1;	
+	}
+
+	function changeImage22() {
+		var el = document.getElementById('myRight');
+		el.style.backgroundImage = images2;
+	}
+      
+	function changeImage33() {
+		var el = document.getElementById('myRight');
+		el.style.backgroundImage = images3;
+	}
+
+	</script>
+  
+</div>   
+
+	<!-- ------------------------------------------------------------- ----> 
+
+   
+  
+</body>
+
+</html>
