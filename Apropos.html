@@ -28,27 +28,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
   background-position: center;
   background-repeat: no-repeat;
  
-  background-size: 100% 100%;
+  background-size: 100%;
   background-image: url('./Images/IMG_0094.jpg');
   min-height: 100%;
-  			animation-name: roue;
+  	<!--		animation-name: roue;
 			animation-duration:80s;
-			animation-iteration-count: infinite
+			animation-iteration-count: infinite  -->
 }
 
-.bgimg2 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./Images/IMG_0094.jpg');
-  min-height: 100%;
-  
-  		<!--	animation-name: roue;
-			animation-duration:20s;
-			animation-iteration-count: infinite
--->			
-			animation: roue 20s infinite;
-}
+
 
 
 	
@@ -62,9 +50,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 		font-size: 32px;		
 	}
 	
-	#myLeft {
-		background-image:url("./Images/IMG_0094.jpg");
-	}	
 	
 	@keyframes roue {
 
@@ -89,7 +74,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
 
   
-	<a href="./index.html" class="w3-bar-item w3-button w3-light-grey"><img src="./Images/logo100.png" alt="Tiers Impartial Logo" style="width:40px; padding-top: 0px; " class="rounded-pill"></i>LE TIERS IMPARTIAL</a> 
+	<a href="./index.html" class="w3-bar-item w3-button w3-light-grey"><img src="./Images/logo100.png" alt="Tiers Impartial Logo" style="width:40px; padding-top: 0px; " class="rounded-pill"></i>    LE TIERS IMPARTIAL</a> 
 	
 	
 	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small w3-right">Nous joindre</a> 
@@ -128,17 +113,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 	<!-- ------------------------------------------------------------- ---->
 	
 <!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%;top: 90px;" >
-<!--   <div class="bgimg"></div> -->
-<div class="bgimg"></div>
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%;   margin:auto; top: 80px;" >
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./Images/img_0031a.jpg" style="width:466px; height:700px;">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./Images/img_0094a.jpg" style="width:466px; height:700px;">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./Images/logonb.jpg" style="width:526px; height:700px;">
+  </div>
+  
 </nav>
 	<!-- ------------------------------------------------------------- ---->
 
-
 <!-- Page Content -->
 <div class="w3-main w3-padding-large" style="margin-left:40%;top: 90px;">
-
-
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
@@ -146,24 +137,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 	<br>
     <p id="pHeader">Firme spécialisée en prévention, règlement et gestion des différends.</p>
      <img src="./Images/img_0094.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;"> 
-     <img src="./Images/img_0094.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> 
-	
-
-	
-	
+     <img src="./Images/img_0094.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> 	
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-left-align w3-text-black " id="about">
 
-
-
   <div>  
     <h2 style="color: rgb(49, 132, 155);">NOTRE FIRME</h2>
 	
-	<div class="bgimg">
-<!--   <div class="bgimg"></div> -->
-</div>
+	<div class="bgimg"> </div>
+	
     <hr class="w3-opacity">
     <p>C’est le bandeau qui couvre les yeux de Thémis, déesse de la justice, qui a inspiré Me Cyr à fonder la firme <i>Le Tiers Impartial Inc.</i> Ce symbole de justice, représentant <b>l’impartialité,</b> est une de nos valeurs fondatrices. Cette valeur guide notre approche et nous permet de gagner <b>la confiance</b> des parties prenantes avec lesquelles nous interagissons dans le cadre de nos services. Ce climat de confiance est pour nous un des éléments clés pour atteindre des solutions durables en évitant la judiciarisation des litiges.
 	<br><br>La confiance envers <i>Le Tiers Impartial Inc.</i>se base non seulement sur <b>la haute qualité</b> de nos services rendus, mais également sur notre engagement à <b>respecter la dignité</b> de toutes les personnes impliquées dans les processus que nous menons en matière de prévention, de résolution et de gestion des différends.
@@ -173,8 +157,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
     </p><br><br>
 	</div>
 	
-
-
 	
 <div class="w3-content w3-left-align w3-text-black w3-padding-32" id="about">
 	<h2 style="color: rgb(49, 132, 155);">UN MOT SUR LA FONDATRICE</h2>
@@ -223,6 +205,24 @@ function openNav() {
   }
 }
 
+</script>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
+}
 </script>
 
 	
