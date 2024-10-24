@@ -41,6 +41,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 		font-size: 32px;		
 	}
 
+	#pli {
+		color: rgb(0, 0, 0);
+		font-family: Helvitica;
+		font-size: 15px;
+		padding-top: 2px;
+	}
+	
 
 </style>
 </head>
@@ -50,19 +57,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 <div class="w3-top">
  <div class="w3-light-grey w3-theme-d2 w3-wide w3-padding w3-card   ">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-	<a href="./index.html" class="w3-bar-item w3-button w3-light-grey"><img src="./Images/logo100.png" alt="Tiers Impartial Logo" style="width:40px; padding-top: 0px; " class="rounded-pill"></i>    LE TIERS IMPARTIAL</a>
-	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small w3-right">Nous joindre</a>  
-	<a href="./Publications.html" class="w3-bar-item w3-button w3-hide-small w3-right">Publications</a>  
+  
+	<a href="./index.html" class="w3-bar-item  w3-light-grey"><img src="./Images/logo4.jpg" alt="Tiers Impartial Logo" style="width:418px; height:48px;"></a> 
+		
+	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small w3-right"><p id="pli">Nous joindre</p></a>  
+	<a href="./Publications.html" class="w3-bar-item w3-button w3-hide-small w3-right"><p id="pli">Publications</p></a> 
 	<div class="  w3-dropdown-hover w3-hide-small w3-right">
-		<button class="w3-button w3-wide"  >Services</button>     
+		<button class="w3-button w3-wide"  ><p id="pli">Services</p></button>     
 			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
-			  <a href="./Conflits.html" class="w3-bar-item w3-button">Résolution des conflits</a>
-			  <a href="./Analyse.html" class="w3-bar-item w3-button">Analyse du climat de travail</a>
-			  <a href="./Enquete.html" class="w3-bar-item w3-button">Enquête administrative</a>
-			  <a href="./Soutien.html" class="w3-bar-item w3-button">Soutiens, conseils et formation</a>
+			  <a href="./Conflits.html" class="w3-bar-item w3-button"><p id="pli">Résolution des conflits</p></a> 
+			  <a href="./Analyse.html" class="w3-bar-item w3-button"><p id="pli">Analyse du climat de travail</p></a> 
+			  <a href="./Enquete.html" class="w3-bar-item w3-button"><p id="pli">Enquête administrative</p></a> 
+			  <a href="./Soutien.html" class="w3-bar-item w3-button"><p id="pli">Soutiens, conseils et formation</p></a> 
 			</div>
 	</div>  
-	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-right">À propos</a> 
+	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-right"><p id="pli">À propos</p></a> 
  </div>
 
 	<!-- ------------------------------------------------------------- ---->
@@ -86,7 +95,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 	<!-- ------------------------------------------------------------- ---->
 	
 <!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%;top: 90px;">
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%; margin:auto; top: 80px;" >
   <div class="bgimg"></div>
 </nav>
 
@@ -108,7 +117,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 
   <div class="w3-content w3-left-align w3-text-black" id="about">
 
-    <hr class="w3-opacity">
+  
     <p>La <i>Loi sur les normes du travail,</i> qui est d’ordre public, oblige les employeurs à fournir à leurs employés un milieu de travail sain. Qu’en est-il dans votre organisation ? Est-elle à la hauteur de ce que vous souhaitez atteindre?
 	<br><br>
 	Telle une photo prise de l’organisation, l’analyse du climat de travail permet d’établir un bilan des enjeux organisationnels, structurels et relationnels qui influencent le climat de travail. Cette analyse permet d’identifier les facteurs de risque qui minent le climat, mais également les facteurs de protection.
@@ -133,10 +142,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-24 w3-light-grey w3-center  " style="margin:-24px">
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center" style="margin:-12px">
     <div>
-    <p>Le Tiers Impartial Inc. <br> 
-    </p>
+    Le Tiers Impartial Inc.<br><br>
   </div>
 
     <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
