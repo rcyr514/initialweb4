@@ -8,6 +8,9 @@
   <title>Le Tiers Impartial</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
   <link rel="stylesheet" href="./CSS/bootstrap.min.css">
   <link href="./CSS/gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
   <script src="./CSS/jquery.min.js"></script>
@@ -43,41 +46,38 @@
 	
 	a.link1:link {color:white;}
 	a.link1:visited {color:white;text-decoration: none;}
-	a.link1:hover {color:LightYellow; text-decoration: none;}
+	a.link1:hover {color:LightYellow ; text-decoration: none;}
 	
 	a.link2:link {color:white;}
 	a.link2:visited {color:white; text-decoration: none;}
-	a.link2:hover {color:LightYellow; text-decoration: none;}
+	a.link2:hover {color:LightYellow ; text-decoration: none;}
 
-	<!-- table, th, td {
-		border: 4px solid;
-		padding: 0px;
-		}  -->
+
 
 	.rightcolumn {
+
+
+
+    }	
+	
+	#myRight {
+		background-image:url("./Images/marbrerusse.jpg");
 		right: 0px;
-		<!-- background-image: url("./Images/bgnoir2.gif"); --> 
-		<!--  background-color: rgb(0, 0, 90); --> 
 		float: right;
 		width: 100%;
-		height: 800px;
+		height: 1000px;
 		padding-right: 0px;
 		padding-left: 0px;
 		background-position: center	  ;
 		background-repeat: no-repeat;
 		background-size: cover; 
-
-    }	
-	
-	#myRight {
-		background-image:url("./Images/MarbreOr3.jpg");
 	}		
 			
 	@keyframes roue {
-		0%   {background-image:url("./Images/MarbreOr3.jpg");}
-		33%  {background-image:url("./Images/th51.jpg");}
-		66%  {background-image:url("./Images/th45.jpg");}
-		100% {background-image:url("./Images/MarbreOr3.jpg");}
+		0%   {background-image:url("./Images/marbrerusse.jpg");}
+		33%  {background-image:url("./Images/themisenor.jpg");}
+		66%  {background-image:url("./Images/bibliothemis.jpeg");}
+		100% {background-image:url("./Images/marbrerusse.jpg");}
 	}
    
     #Clogo {
@@ -133,6 +133,14 @@
 	#NAVbutton {
 		background-color: rgb(150, 150, 150);
 	}
+	
+	#pli {
+		color: rgb(0, 0, 0);
+		font-family: Helvitica;
+		font-size: 15px;
+		padding-top: 2px;
+	}
+	
 	
 	@media only screen and (max-width: 700px) {
 	
@@ -211,6 +219,56 @@
 <body>
 
 
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-light-grey w3-theme-d2 w3-wide w3-padding w3-card   ">
+ 
+  <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+  
+	<a href="./index.html" class="w3-bar-item  w3-hide-small w3-hide-medium w3-light-grey"><img src="./Images/logo4.jpg" alt="Tiers Impartial Logo" style="width:375px; height:48px;"></a> 
+	
+ 	<a href="./index.html" class="w3-bar-item  w3-hide-large w3-light-grey"><img src="./Images/logo4d.jpg" alt="Tiers Impartial Logo" style="width:256px; height:40px; "></a>   
+	
+	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small  w3-hide-medium w3-right"><p id="pli">Nous joindre</p></a>  
+	<a href="./Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><p id="pli">Publications</p></a> 
+	<div class="  w3-dropdown-hover w3-hide-small w3-hide-medium w3-right">
+		<button class="w3-button w3-wide"  ><p id="pli">Services</p></button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="./Conflits.html" class="w3-bar-item w3-button"><p id="pli">Résolution des conflits</p></a> 
+			  <a href="./Analyse.html" class="w3-bar-item w3-button"><p id="pli">Analyse du climat de travail</p></a> 
+			  <a href="./Enquete.html" class="w3-bar-item w3-button"><p id="pli">Enquête administrative</p></a> 
+			  <a href="./Soutien.html" class="w3-bar-item w3-button"><p id="pli">Soutiens, conseils et formation</p></a> 
+			</div>
+	</div>  
+	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><p id="pli">À propos</p></a> 
+ </div>
+
+	<!-- ------------------------------------------------------------- ---->
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-grey w3-theme-d2 w3-padding w3-card w3-hide w3-hide-large ">
+  
+	<a href="./Apropos.html" class="w3-bar-item w3-button">À propos</a> 
+	<a href="./Publications.html" class="w3-bar-item w3-button">Publications</a>	
+	<a href="./Contact.html" class="w3-bar-item w3-button">Nous joindre</a> 
+    <div class="w3-dropdown-hover w3-right">
+		<button class="w3-button" >Services</button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="./Conflits.html" class="w3-bar-item w3-button">Résolution des conflits</a>
+			  <a href="./Analyse.html" class="w3-bar-item w3-button">Analyse du climat de travail</a>			  
+			  <a href="./Enquete.html" class="w3-bar-item w3-button">Enquête administrative</a>
+			  <a href="./Soutien.html" class="w3-bar-item w3-button">Soutiens, conseils et formation</a>
+			</div>
+	</div>
+	<a href="#" class="w3-bar-item w3-button"></a> 		
+  </div>
+</div>
+
+
+
+
+
+<!-- 
 <div>  
     <nav class="navbar navbar-expand-md navbar-dark gwd-nav-1g2p fixed-top ;" >
       <div class="logo" id="Clogo">	  
@@ -234,8 +292,7 @@
             </a>
           </li>
           <li class="nav-item ml-auto dropdown">
-            <a class="nav-link" href="#">
-              <!--  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">---->
+            <a class="nav-link" href="#">          
               <p id="pli" >
                 Services
               </p>
@@ -271,6 +328,8 @@
     </nav>
 
 </div>    
+---->
+
 
 	<!-- ------------------------------------------------------------- ---->
 
@@ -324,9 +383,9 @@
 
 	<script>
 
-		images1 = "url(./Images/th51.jpg)";
-		images2 = "url(./Images/th45.jpg)";
-		images3 = "url(./Images/MarbreOr3.jpg)";
+		images1 = "url(./Images/themisenor.jpg)";
+		images2 = "url(./Images/bibliothemis.jpeg)";
+		images3 = "url(./Images/marbrerusse.jpg)";
 
 		document.getElementById("Lien1").onmouseover = function() {changeImage11()};
 		document.getElementById("Lien1").onmouseout = function() {changeImage33()};
@@ -351,6 +410,21 @@
 
 	</script>
   
+  
+ <script>
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
 </div>   
 
 	<!-- ------------------------------------------------------------- ----> 
