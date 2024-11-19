@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">  -->
+	<link rel="stylesheet" href="./CSS/cssverdana.css?family=Verdana">
+	
+<!--		<link rel="stylesheet" href="./CSS/font-awesome.min.css">  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link rel="stylesheet" href="./CSS/bootstrap.min.css">
+	<link href="./CSS/gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+	<script src="./CSS/jquery.min.js"></script>
+	<script src="./CSS/popper.min.js"></script>
+	<script src="./CSS/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./CSS/w3.css">
+	
+	<script src="./CSS/bootstrap.bundle.min.js"></script> 
+		
+	
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('./Images/champagne3.jpg');
+  min-height: 100%;
+}
+</style>
+  
+  <style type="text/css">
+
+	#pHeader {
+		color: rgb(0, 0, 0);
+		font-family:  BODONI mt;
+		font-size: 32px;		
+	}
+
+	#pli {
+		color: rgb(0, 0, 0);
+		font-family: Helvitica;
+		font-size: 15px;
+		padding-top: 2px;
+	}
+	
+
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-light-grey w3-theme-d2 w3-wide w3-padding w3-card   ">
+ 
+  <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+  
+	<a href="./index.html" class="w3-bar-item  w3-hide-small w3-hide-medium w3-light-grey"><img src="./Images/logo4.jpg" alt="Tiers Impartial Logo" style="width:375px; height:48px;"></a> 
+	
+ 	<a href="./index.html" class="w3-bar-item  w3-hide-large w3-light-grey"><img src="./Images/logo4d.jpg" alt="Tiers Impartial Logo" style="width:256px; height:48px; "></a>   
+	
+	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small  w3-hide-medium w3-right"><p id="pli">Nous joindre</p></a>  
+	<a href="./Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><p id="pli">Publications</p></a> 
+	<div class="  w3-dropdown-hover w3-hide-small w3-hide-medium w3-right">
+		<button class="w3-button w3-wide"  ><p id="pli">Services</p></button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="./Conflits.html" class="w3-bar-item w3-button"><p id="pli">Résolution des conflits</p></a> 
+			  <a href="./Analyse.html" class="w3-bar-item w3-button"><p id="pli">Analyse du climat de travail</p></a> 
+			  <a href="./Enquete.html" class="w3-bar-item w3-button"><p id="pli">Enquête administrative</p></a> 
+			  <a href="./Soutien.html" class="w3-bar-item w3-button"><p id="pli">Soutien, conseils et formation</p></a> 
+			</div>
+	</div>  
+	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><p id="pli">À propos</p></a> 
+ </div>
+
+	<!-- ------------------------------------------------------------- ---->
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-grey w3-theme-d2 w3-padding w3-card w3-hide w3-hide-large ">
+  
+	<a href="./Apropos.html" class="w3-bar-item w3-button">À propos</a> 
+	<a href="./Publications.html" class="w3-bar-item w3-button">Publications</a>	
+	<a href="./Contact.html" class="w3-bar-item w3-button">Nous joindre</a> 
+    <div class="w3-dropdown-hover w3-right">
+		<button class="w3-button" >Services</button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="./Conflits.html" class="w3-bar-item w3-button">Résolution des conflits</a>
+			  <a href="./Analyse.html" class="w3-bar-item w3-button">Analyse du climat de travail</a>			  
+			  <a href="./Enquete.html" class="w3-bar-item w3-button">Enquête administrative</a>
+			  <a href="./Soutien.html" class="w3-bar-item w3-button">Soutien, conseils et formation</a>
+			</div>
+	</div>
+	<a href="#" class="w3-bar-item w3-button"></a> 		
+  </div>
+</div>
+	<!-- ------------------------------------------------------------- ---->
+	
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%; height: 700px; margin:auto; top: 80px;" >
+  <div class="bgimg"></div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%;top: 90px;">
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo" style="font-family:  BODONI mt;">Ces partys trop arrosés</h1>
+	<br>
+ <!--   <p id="pHeader">Enquête</p> -->
+    <img src="./Images/champagne3.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./Images/champagne3.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- About Section -->
+  	
+	
+<div class="w3-card-4">
+
+	<div class="w3-container w3-text-black w3-left-align">
+	<p style="font-size: 10px"><br><u>Auteures:</u></p>
+		<p style="font-size: 12px"><br><b>Me Julie Cyr</b><br>
+Médiatrice & enquêtrice accréditée<br><br>
+Avec la collaboration de<br>Me Cristina Mageau, médiatrice & enquêtrice accréditée,<br>et de Me Eirini Michali, enquêtrice accréditée.</p>
+<p style="font-size: 10px"><br>Publié le 18 novembre 2024</p>
+		</p>
+	</div>	
+</div>	
+<br><br>
+
+
+  <div class="w3-content w3-left-align w3-text-black" id="about">
+
+  
+    <p>À l’approche du mois de décembre, bon nombre de party de bureau sont en cours d’organisation. C’est l’occasion par excellence de se féliciter pour les bons coups de l’année qui se termine et de décompresser en compagnie de collègues que l’on apprécie dans une atmosphère souvent plus décontractée. La plupart du temps, ces rassemblements permettent de renforcer les liens professionnels entre employés et même avec les gestionnaires.<br><br>
+    Or, dans les années passées, les tribunaux ont mis en lumière les comportements de certaines personnes qui ont outrepassé largement les règles de civisme à l’occasion de ces festivités. Citons à titre d’exemples l’<i>« échange de textos au cours de la soirée qui commence dans le badinage et le jeu, mais qui graduellement aboutit à une proposition de contact intime&sup1; »</i> ou encore l’employé qui <i>« […] a touché le sein de la plaignante en mettant un glaçon dans son chandail et ce geste n’a pas été fait par inadvertance »</i>&sup2;. <br><br>	
+    </p>  
+
+	<p>Lorsqu’une personne gestionnaire ou intervenante en ressources humaines a connaissance que des comportements inadéquats seraient survenus durant une activité sociale reliée au travail, il est de sa responsabilité d’agir afin d’assurer un climat de travail sain pour l’ensemble de ses employés. Parmi les actions à poser, mandater une firme d’enquête spécialisée pourrait s’avérer un choix judicieux, surtout si les comportements sont de nature agressive, violente ou à caractère sexuel. En effet, la personne enquêtrice pourra aborder en toute dignité ce sujet délicat avec les personnes concernées et faire rapport à l’organisation en ce qui a trait à sa responsabilité légale.<br><br>
+	
+    Le respect de la dignité des parties impliquées dans un processus d’enquête est primordial pour que ces personnes se sentent à l’aise de témoigner. Nous comprenons aisément qu’il puisse être gênant de parler de comportements embarrassants découlant d’une consommation d’alcool inadéquate lors de l’une de ces soirées. Par ailleurs, pour faciliter ce type d’entrevue, il existe des techniques particulières, notamment l’approche <i>trauma-informed.</i> Nous y reviendrons dans le cadre d’un prochain article collaboratif.<br><br>
+
+	Puisque de tels gestes peuvent entraîner la responsabilité légale de l’employeur, plusieurs facteurs doivent être analysés minutieusement. Certains éléments peuvent complexifier l’analyse juridique de la situation de harcèlement allégué.<br><br>
+	
+    Ce fut notamment le cas lorsque l’arbitre Roy&sup3; a dû déterminer si un employeur était en droit de tenir une enquête pour des événements de nature privée s’étant déroulés à l’extérieur du milieu de travail. En l’espèce, l’employeur avait nolisé un autobus pour ramener les employés à leur résidence à la fin de la fête de Noël. Or, certains employés avaient donné des instructions contraires au chauffeur d’autobus qui les avaient amenés à un hôtel. Le lendemain, l’employeur a été informé d’une rumeur à l’effet d’une consommation de drogues au <i>party</i> de Noël suivie d’une agression sexuelle collective qui auraient eu lieu audit hôtel.<br><br> 
+
+    Dans le cadre de l’analyse d’une plainte de harcèlement psychologique, il est normal qu’un employeur se questionne en présence de circonstances particulières. Par exemple, qu’en est-il des <i>party</i> de bureau organisés par les employés ou par le syndicat? Comment procéder lorsque la personne mise en cause est gestionnaire ou responsable des ressources humaines de l’entreprise? Est-ce que le geste reproché se qualifie au sens de l’acte unique grave ou plutôt comme une incivilité? Quels sont les facteurs aggravants ou atténuants en pareilles circonstances? En tant qu’avocates-enquêtrices, nous serons en mesure de vous donner un avis juridique en tenant compte de toutes les spécificités du dossier. Nous sommes également habiletés à analyser l’efficacité des mesures préventives et curatives prises par l’organisation en pareilles circonstances. <br><br> 
+
+	Pour conclure, organiser un <i>party</i> de bureau en période de fin d’année est une façon judicieuse de remercier les employés et de souligner le bon travail accompli. À titre préventif, une organisation réfléchie de la fête permettra de profiter pleinement de celle-ci. Si ce n’est pas déjà fait, il est grand temps de mettre à jour et de diffuser votre politique d’entreprise en matière de prévention du harcèlement. Rappelons que depuis le 27 septembre dernier&#x2074;, toute politique doit désormais faire mention de recommandations concernant les conduites à adopter lors de la participation aux activités sociales liées au travail. La diffusion d’une politique conforme est une action toute simple qui vous permettra de prévenir bien des situations fâcheuses et de mieux profiter des festivités à venir.  
+	<br><br>
+	</p>
+	<hr style="height:2px;border-width:0;color:gray;background-color:gray; width:50%;">
+	<p style="font-size: 10px">
+	&sup1; Thivierge et Ville de Thetford Mines, 2017 QCTAT 135 (CanLII)<br>
+	&sup2; S.H. c. Compagnie A, 2007 QCCRT 348 (CanLII)<br>
+	&sup3; Syndicat des salariés(es) de l’agroalimentaire de Ste-Claire c Kerry Canada Inc., 2022 CanLII 38156 (QC SAT)<br>
+	&#x2074; <i>Loi visant à prévenir et à combattre le harcèlement psychologique et la violence à caractère sexuel en milieu de travail</i> (Projet de loi 42)
+	</p>
+	
+<br><br>
+</div>
+	
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center" style="margin:-12px; font-size: 12px" >
+    <div>
+	<br>
+    Tous droits réservés © 2024 Le Tiers Impartial Inc.<br><br>
+  </div>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+<script>
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>
